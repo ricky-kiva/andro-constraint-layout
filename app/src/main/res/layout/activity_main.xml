@@ -26,8 +26,7 @@
             app:srcCompat="@drawable/pixel_google" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            style="@style/TextContent.Small.White"
             android:background="#4D000000"
             android:drawableStart="@drawable/ic_collections_white_18dp"
             android:drawablePadding="4dp"
@@ -35,7 +34,6 @@
             android:padding="8dp"
             android:text="@string/dummy_photos"
             android:textAppearance="@style/TextAppearance.AppCompat.Small"
-            android:textColor="@color/white"
             app:layout_constraintBottom_toBottomOf="@+id/image_phone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -45,38 +43,32 @@
 
         <TextView
             android:id="@+id/text_price"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            style="@style/TextContent"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:text="@string/dummy_value"
             android:textSize="32sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/text_stock"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/image_phone" />
 
         <TextView
             android:id="@+id/text_stock"
-            android:layout_width="0dp"
-            android:layout_height="21dp"
+            style="@style/TextContent.Subtitle"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
             android:text="@string/stock"
-            android:textSize="12sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/text_description"
+            app:layout_constraintStart_toStartOf="@+id/text_price"
             app:layout_constraintTop_toBottomOf="@+id/text_price" />
 
         <TextView
             android:id="@+id/text_description"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            style="@style/TextContent.Subtitle"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:lineSpacingMultiplier="1"
             android:text="@string/content_text"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/text_stock"
             app:layout_constraintTop_toBottomOf="@+id/text_stock" />
 
         <include
