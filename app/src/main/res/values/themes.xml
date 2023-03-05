@@ -14,6 +14,14 @@
         <!-- Customize your theme here. -->
     </style>
 
+    <!--colorPrimary:'primary' app color, in 'Action Bar'/'Button'-->
+    <!--colorPrimaryVariant: 'primary' color in 'Status Bar'-->
+    <!--colorOnPrimary: color for 'text/icon' in 'primary'-->
+    <!--colorPrimary:'secondary' app color, in 'Action Bar'/'Button'-->
+    <!--colorPrimaryVariant: color variation-->
+    <!--colorOnPrimary: color for 'text/icon' in 'secondary'-->
+    <!--more: https://d17ivq9b7rppb3.cloudfront.net/original/academy/20201209211229419e7305f04955462946e2eb449bd997.jpeg-->
+
     <style name="TextContent">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
